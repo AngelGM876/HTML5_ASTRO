@@ -1,16 +1,198 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="#top">Arriba</a></li>
+			<li><a href="#work">Trabajo</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<!-- Home -->
+	<article id="top" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-5-large col-12-medium">
+					<span class="image fit"><img src="/images/angel.png" alt="" /></span>
+				</div>
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h1>Hola  Soy <strong>Angel Guerra Muñoz</strong>.</h1>
+					</header>
+					<p>Y este es mi portafolio personal, donde presento mis proyectos, habilidades y experiencia adquirida a lo largo de mi formación y desarrollo.</p>
+					<a href="#work" class="button large scrolly">Conoce mas sobre lo que hago</a>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!-- Work -->
+	<article id="work" class="wrapper style2">
+	<div class="container">
+		<header>
+			<h2>Aquí está todo lo que hago.</h2>
+			<p>
+				Diseño y desarrollo soluciones de software enfocadas en rendimiento,
+				usabilidad y escalabilidad.
+			</p>
+		</header>
+
+		<div class="row aln-center">
+			<div class="col-4 col-6-medium col-12-small">
+				<section class="box style1">
+					<h3>Desarrollo de Software</h3>
+					<p>
+						Creo aplicaciones web y móviles utilizando buenas prácticas,
+						código limpio y arquitecturas modernas.
+					</p>
+				</section>
+			</div>
+
+			<div class="col-4 col-6-medium col-12-small">
+				<section class="box style1">
+					<h3>Frontend & Backend</h3>
+					<p>
+						Trabajo tanto en interfaces intuitivas como en la lógica del
+						servidor, integrando APIs y bases de datos.
+					</p>
+				</section>
+			</div>
+
+			<div class="col-4 col-6-medium col-12-small">
+				<section class="box style1">
+					<h3>Bases de Datos</h3>
+					<p>
+						Diseño y gestiono bases de datos eficientes, garantizando
+						seguridad, consistencia y buen rendimiento.
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<footer>
+			<a href="#portfolio" class="button large scrolly">
+				Ver algunos de mis proyectos
+			</a>
+		</footer>
+	</div>
+</article>
+
+
+	<!-- Portfolio -->
+	<article id="portfolio" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Aquí hay algunas cosas que hice recientemente.</h2>
+			</header>
+			<div class="row">
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="/images/pic01.jpg" alt="" /></a>
+						<h3><a href="#">Integradora MICRO-INFO</a></h3>
+						<p>Proyecto de capacitación para operadores del transporte público mediante una aplicación web con módulos interactivos, orientados a la enseñanza de normas de tránsito, leyes de vialidad, manejo preventivo y señales de tránsito.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="/images/pic02.jpg" alt="" /></a>
+						<h3><a href="#">HACKATHON (2023) COMBITA</a></h3>
+						<p>Iniciativa enfocada en servir como intermediario de confianza para la contratación de oficios por parte de inmigrantes, brindando apoyo económico, reduciendo la desigualdad y garantizando transacciones seguras mediante una plataforma web.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="/images/pic03.jpg" alt="" /></a>
+						<h3><a href="#">SHOP-APP</a></h3>
+						<p>Aplicación móvil desarrollada en Flutter para la compra y venta de una amplia variedad de productos, ofreciendo transacciones seguras y una experiencia de usuario fluida y accesible.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="/images/pic04.jpg" alt="" /></a>
+						<h3><a href="#">DAILY-FACTS-PWA</a></h3>
+						<p>Progressive Web App desarrollada con HTML y CSS que muestra un dato curioso diferente cada día y almacena la información en un archivo CSV para su persistencia y consulta local.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="/images/pic05.jpg" alt="" /></a>
+						<h3><a href="#">100-mexicanos-dijeron</a></h3>
+						<p>Juego interactivo inspirado en \"100 Mexicanos Dijeron\", desarrollado con HTML, CSS y JavaScript, que utiliza SQLite para almacenar preguntas, respuestas y puntajes de manera persistente.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="/images/pic06.jpg" alt="" /></a>
+						<h3><a href="#">VR-tour</a></h3>
+						<p>Aplicación móvil desarrollada con React Native para universidad que ofrece una experiencia de realidad virtual mediante videos 360°, permitiendo recorrer las aulas de la carrera de Derecho, la biblioteca y las áreas verdes de forma inmersiva.</p>
+					</article>
+				</div>
+			</div>
+			<footer>
+				<p></p>
+				<a href="#contact" class="button large scrolly">Ponte en contacto conmigo</a>
+			</footer>
+		</div>
+	</article>
+
+	<!-- Contact -->
+	<article id="contact" class="wrapper style4">
+		<div class="container medium">
+			<header>
+				<h2>Contacto</h2>
+				<p>Deja tu mensaje</p>
+			</header>
+			<div class="row">
+				<div class="col-12">
+					<form method="post" action="#">
+						<div class="row">
+							<div class="col-6 col-12-small">
+								<input type="text" name="name" id="name" placeholder="Nombre" />
+							</div>
+							<div class="col-6 col-12-small">
+								<input type="text" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" id="subject" placeholder="Sujeto" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" id="message" placeholder="Mensaje"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Enviar mensaje" /></li>
+									<li><input type="reset" value="Limpiar formulario" class="alt" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-12">
+					<hr />
+					<h3>Encuentrame en...</h3>
+					<ul class="social">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+					<hr />
+				</div>
+			</div>
+			<footer>
+				<ul id="copyright">
+					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+		</div>
+	</article>
+
+</BaseLayout>
