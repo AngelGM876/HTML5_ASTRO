@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 
+/* ===== TEMA POR DEFECTO (OSCURO) ===== */
 :root {
   --white: #e8e8e8;
   --primary: #43b3e0;
@@ -12,7 +13,103 @@
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --nav-bg: rgba(40, 40, 40, 0.95);
+  --text-color: #888;
+  --heading-color: #3e3e3e;
+  --bg-section-1: #fff;
+  --bg-section-2: #fafafa;
+  --bg-section-3: #f4f4f4;
+  --bg-section-4: #303030;
 }
+
+/* ===== TEMA CLARO ===== */
+[data-theme="light"] {
+  --white: #2c2c2c;
+  --primary: #2196F3;
+  --primary-dark: #1976D2;
+  --accent: #FF4081;
+  --bodyColor: #ffffff;
+  --borderFormEls: hsl(0, 0%, 85%);
+  --bgFormEls: hsl(0, 0%, 96%);
+  --bgFormElsFocus: hsl(0, 0%, 92%);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --text-color: #555;
+  --heading-color: #1a1a1a;
+  --bg-section-1: #f8f9fa;
+  --bg-section-2: #ffffff;
+  --bg-section-3: #f1f3f5;
+  --bg-section-4: #e9ecef;
+}
+
+/* ===== TEMA AZUL ===== */
+[data-theme="blue"] {
+  --white: #e3f2fd;
+  --primary: #2196F3;
+  --primary-dark: #1565C0;
+  --accent: #00BCD4;
+  --bodyColor: #0d1b2a;
+  --borderFormEls: hsl(210, 50%, 25%);
+  --bgFormEls: hsl(210, 50%, 15%);
+  --bgFormElsFocus: hsl(210, 50%, 20%);
+  --shadow-sm: 0 2px 8px rgba(33, 150, 243, 0.2);
+  --shadow-md: 0 4px 16px rgba(33, 150, 243, 0.25);
+  --shadow-lg: 0 8px 32px rgba(33, 150, 243, 0.3);
+  --nav-bg: rgba(13, 27, 42, 0.95);
+  --text-color: #90caf9;
+  --heading-color: #bbdefb;
+  --bg-section-1: #1b263b;
+  --bg-section-2: #0d1b2a;
+  --bg-section-3: #162032;
+  --bg-section-4: #0a1628;
+}
+
+/* ===== TEMA MORADO ===== */
+[data-theme="purple"] {
+  --white: #f3e5f5;
+  --primary: #9C27B0;
+  --primary-dark: #6A1B9A;
+  --accent: #E91E63;
+  --bodyColor: #1a0033;
+  --borderFormEls: hsl(280, 50%, 25%);
+  --bgFormEls: hsl(280, 50%, 15%);
+  --bgFormElsFocus: hsl(280, 50%, 20%);
+  --shadow-sm: 0 2px 8px rgba(156, 39, 176, 0.2);
+  --shadow-md: 0 4px 16px rgba(156, 39, 176, 0.25);
+  --shadow-lg: 0 8px 32px rgba(156, 39, 176, 0.3);
+  --nav-bg: rgba(26, 0, 51, 0.95);
+  --text-color: #ce93d8;
+  --heading-color: #e1bee7;
+  --bg-section-1: #2d1b3d;
+  --bg-section-2: #1a0033;
+  --bg-section-3: #240a3f;
+  --bg-section-4: #15002b;
+}
+
+/* ===== TEMA VERDE ===== */
+[data-theme="green"] {
+  --white: #e8f5e9;
+  --primary: #4CAF50;
+  --primary-dark: #2E7D32;
+  --accent: #8BC34A;
+  --bodyColor: #0d1f0d;
+  --borderFormEls: hsl(120, 40%, 25%);
+  --bgFormEls: hsl(120, 40%, 15%);
+  --bgFormElsFocus: hsl(120, 40%, 20%);
+  --shadow-sm: 0 2px 8px rgba(76, 175, 80, 0.2);
+  --shadow-md: 0 4px 16px rgba(76, 175, 80, 0.25);
+  --shadow-lg: 0 8px 32px rgba(76, 175, 80, 0.3);
+  --nav-bg: rgba(13, 31, 13, 0.95);
+  --text-color: #a5d6a7;
+  --heading-color: #c8e6c9;
+  --bg-section-1: #1b2f1b;
+  --bg-section-2: #0d1f0d;
+  --bg-section-3: #162816;
+  --bg-section-4: #0a1a0a;
+}
+
 
 * {
   padding: 0;
