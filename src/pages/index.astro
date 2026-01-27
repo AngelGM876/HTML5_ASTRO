@@ -1,212 +1,229 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
+import BaseLayout from "../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout>
-	<!-- Nav -->
-	<nav id="nav">
-		<ul class="container">
-			<li><a href="#top">Arriba</a></li>
-			<li><a href="#work">Trabajo</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contacto</a></li>
-		</ul>
-	</nav>
-
-	<!-- Home -->
-	<article id="top" class="wrapper style1">
-		<div class="container">
-			<div class="row">
-				<div class="col-4 col-5-large col-12-medium">
-					<span class="image fit">
-						<img src="/images/angel.png" alt="Angel Guerra Muñoz" />
-					</span>
-				</div>
-				<div class="col-8 col-7-large col-12-medium">
-					<header>
-						<h1>Hola, soy <strong>Angel Guerra</strong>.</h1>
-					</header>
-					<p>
-						Y este es mi portafolio personal, donde presento mis proyectos,
-						habilidades y experiencia adquirida a lo largo de mi formación y desarrollo.
-					</p>
-					<a href="#work" class="button large scrolly">
-						Conoce más sobre lo que hago
-					</a>
-				</div>
-			</div>
-		</div>
-	</article>
-
-	<!-- Work -->
-	<article id="work" class="wrapper style2">
-		<div class="container">
-			<header>
-				<h2>Aquí está todo lo que hago.</h2>
-				<p>
-					Diseño y desarrollo soluciones de software enfocadas en rendimiento,
-					usabilidad y escalabilidad.
-				</p>
-			</header>
-
-			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-					<img src="/images/Desarrollo_de_software.jpg" class="image featured" alt="" />
-						<h3>Desarrollo de Software</h3>
-						<p>
-							Creo aplicaciones web y móviles utilizando buenas prácticas,
-							código limpio y arquitecturas modernas.
-						</p>
-					</section>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-					<img src="/images/frontend_backend.png" class="image featured" alt="" />
-						<h3>Frontend & Backend</h3>
-						<p>
-							Trabajo tanto en interfaces intuitivas como en la lógica del
-							servidor, integrando APIs y bases de datos.
-						</p>
-					</section>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-					<img src="/images/database.jpg" class="image featured" alt="" />
-						<h3>Bases de Datos</h3>
-						<p>
-							Diseño y gestiono bases de datos eficientes, garantizando
-							seguridad, consistencia y buen rendimiento.
-						</p>
-					</section>
-				</div>
-			</div>
-
-			<footer>
-				<a href="#portfolio" class="button large scrolly">
-					Ver algunos de mis proyectos
-				</a>
-			</footer>
-		</div>
-	</article>
-
-	<!-- Portfolio -->
-	<article id="portfolio" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Aquí hay algunas cosas que hice recientemente.</h2>
-			</header>
-
-			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=600&fit=crop" class="image featured" alt="Capacitación transporte público" />
-						<h3>Integradora MICRO-INFO</h3>
-						<p>
-							Proyecto de capacitación para operadores del transporte público
-							mediante una aplicación web con módulos interactivos.
-						</p>
-					</article>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop" class="image featured" alt="Plataforma de contratación" />
-						<h3>HACKATHON (2023) COMBITA</h3>
-						<p>
-							Plataforma web para contratación de oficios, enfocada en
-							transacciones seguras y reducción de desigualdad.
-						</p>
-					</article>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=600&fit=crop" class="image featured" alt="App móvil de compras" />
-						<h3>SHOP-APP</h3>
-						<p>
-							Aplicación móvil en Flutter para compra y venta de productos
-							con experiencia fluida y segura.
-						</p>
-					</article>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop" class="image featured" alt="PWA datos curiosos" />
-						<h3>DAILY-FACTS-PWA</h3>
-						<p>
-							PWA que muestra un dato curioso diario y lo guarda en CSV
-							para persistencia local.
-						</p>
-					</article>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop" class="image featured" alt="Juego interactivo" />
-						<h3>100 mexicanos dijeron</h3>
-						<p>
-							Juego interactivo desarrollado con HTML, CSS y JavaScript
-							usando SQLite.
-						</p>
-					</article>
-				</div>
-
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=800&h=600&fit=crop" class="image featured" alt="Realidad virtual" />
-						<h3>VR-tour</h3>
-						<p>
-							App móvil en React Native con recorridos en realidad virtual
-							mediante videos 360°.
-						</p>
-					</article>
-				</div>
-			</div>
-
-			<footer>
-				
-			</footer>
-		</div>
-	</article>
-
-	<!-- Contact -->
-	<article id="contact" class="wrapper style4">
-		<div class="container">
-			<header>
-				<h2>Contáctame</h2>
-				<p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-			</header>
-			
-			<form
-  action="https://formspree.io/f/xlgblkba"
-  method="POST"
->
-   <label>
-    Nombre:	
-    <input type="text" name="name">
-  	</label>
-  <label>
-    Email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Asunto:
-    <textarea name="message"></textarea>
-  </label>
-  <button type="submit">Enviar</button>
-</form>
-		</div>
-	</article>
-
-	<footer>
-		<div class="container">
-			<small>© 2026 — Formulario generado con Astro</small>
-		</div>
-	</footer>
-
-	<script type="module" src="/assets/js/form.js" defer></script>
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="#top">Arriba</a></li>
+      <li><a href="#work">Trabajo</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+  <!-- Home -->
+  <article id="top" class="wrapper style1">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-5-large
+col-12-medium">
+          <span class="image fit">
+            <img src={`${base}images/angel.png`} alt="Angel Guerra Muñoz" />
+          </span>
+        </div>
+        <div class="col-8 col-7-large
+col-12-medium">
+          <header><h1>Hola, soy <strong>Angel Guerra</strong>.</h1></header>
+          <p>
+            Y este es mi portafolio personal, donde presento mis proyectos,
+            habilidades y experiencia adquirida a lo largo de mi formación y
+            desarrollo.
+          </p>
+          <a href="#work" class="button large scrolly">
+            Conoce más sobre lo que hago
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <!-- Work -->
+  <article id="work" class="wrapper style2">
+    <div class="container">
+      <header>
+        <h2>Aquí está todo lo que hago.</h2>
+        <p>
+          Diseño y desarrollo soluciones de software enfocadas en rendimiento,
+          usabilidad y escalabilidad.
+        </p>
+      </header>
+      <div class="row
+aln-center">
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box
+style1">
+            <img
+              src={`${base}images/Desarrollo_de_software.jpg`}
+              class="image
+featured"
+              alt=""
+            />
+            <h3>Desarrollo de Software</h3>
+            <p>
+              Creo aplicaciones web y móviles utilizando buenas prácticas,
+              código limpio y arquitecturas modernas.
+            </p>
+          </section>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box style1">
+            <img
+              src={`${base}images/frontend_backend.png`}
+              class="image
+featured"
+              alt=""
+            />
+            <h3>Frontend & Backend</h3>
+            <p>
+              Trabajo tanto en interfaces intuitivas como en la lógica del
+              servidor, integrando APIs y bases de datos.
+            </p>
+          </section>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <section class="box style1">
+            <img
+              src={`${base}images/database.jpg`}
+              class="image
+featured"
+              alt=""
+            />
+            <h3>Bases de Datos</h3>
+            <p>
+              Diseño y gestiono bases de datos eficientes, garantizando
+              seguridad, consistencia y buen rendimiento.
+            </p>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <a href="#portfolio" class="button large
+scrolly">
+          Ver algunos de mis proyectos
+        </a>
+      </footer>
+    </div>
+  </article>
+  <!--
+Portfolio -->
+  <article id="portfolio" class="wrapper style3">
+    <div class="container">
+      <header><h2>Aquí hay algunas cosas que hice recientemente.</h2></header>
+      <div class="row">
+        <div class="col-4 col-6-medium
+col-12-small">
+          <article class="box style2">
+            <img
+              src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&h=600&fit=crop"
+              class="image featured"
+              alt="Capacitación transporte público"
+            />
+            <h3>Integradora MICRO-INFO</h3>
+            <p>
+              Proyecto de capacitación para operadores del transporte público
+              mediante una aplicación web con módulos interactivos.
+            </p>
+          </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box
+style2">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=600&fit=crop"
+              class="image featured"
+              alt="Plataforma de contratación"
+            />
+            <h3>HACKATHON (2023) COMBITA</h3>
+            <p>
+              Plataforma web para contratación de oficios, enfocada en
+              transacciones seguras y reducción de desigualdad.
+            </p>
+          </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2">
+            <img
+              src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=600&fit=crop"
+              class="image featured"
+              alt="App móvil de compras"
+            />
+            <h3>SHOP-APP</h3>
+            <p>
+              Aplicación móvil en Flutter para compra y venta de productos con
+              experiencia fluida y segura.
+            </p>
+          </article>
+        </div>
+        <div class="col-4 col-6-medium
+col-12-small">
+          <article class="box style2">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop"
+              class="image featured"
+              alt="PWA datos curiosos"
+            />
+            <h3>DAILY-FACTS-PWA</h3>
+            <p>
+              PWA que muestra un dato curioso diario y lo guarda en CSV para
+              persistencia local.
+            </p>
+          </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2">
+            <img
+              src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop"
+              class="image featured"
+              alt="Juego interactivo"
+            />
+            <h3>100 mexicanos dijeron</h3>
+            <p>
+              Juego interactivo desarrollado con HTML, CSS y JavaScript usando
+              SQLite.
+            </p>
+          </article>
+        </div>
+        <div class="col-4 col-6-medium col-12-small">
+          <article class="box style2">
+            <img
+              src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=800&h=600&fit=crop"
+              class="image featured"
+              alt="Realidad virtual"
+            />
+            <h3>VR-tour</h3>
+            <p>
+              App móvil en React Native con recorridos en realidad virtual
+              mediante videos 360°.
+            </p>
+          </article>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+  </article>
+  <!-- Contact -->
+  <article id="contact" class="wrapper style4">
+    <div class="container">
+      <header>
+        <h2>Contáctame</h2>
+        <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      </header>
+      <form action="https://formspree.io/f/xlgblkba" method="POST">
+        <label>
+          Nombre:
+          <input type="text" name="name" />
+        </label>
+        <label> Email: <input type="email" name="email" /> </label>
+        <label> Asunto: <textarea name="message"></textarea> </label>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </article>
+  <footer>
+    <div class="container">
+      <small>© 2026 — Formulario generado con Astro</small>
+    </div>
+  </footer>
+  <script type="module" src={`${base}assets/js/form.js`} defer></script>
 </BaseLayout>
