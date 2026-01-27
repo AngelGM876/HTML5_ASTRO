@@ -1,26 +1,30 @@
 ---
+const base = import.meta.env.BASE_URL;
 ---
+
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <title>Angel Guerra Muñoz</title>
 
-    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href={`${base}assets/css/fontawesome-all.min.css`} />
+    <link rel="stylesheet" href={`${base}assets/css/main.css`} />
+    <link rel="stylesheet" href={`${base}assets/css/styles.css`} />
   </head>
 
   <body class="is-preload">
     <slot />
 
-    <!-- Scripts -->
-    <script is:inline src="/assets/js/jquery.min.js"></script>
-    <script is:inline src="/assets/js/jquery.scrolly.min.js"></script>
-    <script is:inline src="/assets/js/browser.min.js"></script>
-    <script is:inline src="/assets/js/breakpoints.min.js"></script>
-    <script is:inline src="/assets/js/util.js"></script>
-    <script is:inline src="/assets/js/main.js"></script>
+    <script is:inline src={`${base}assets/js/jquery.min.js`}></script>
+    <script is:inline src={`${base}assets/js/jquery.scrolly.min.js`}></script>
+    <script is:inline src={`${base}assets/js/browser.min.js`}></script>
+    <script is:inline src={`${base}assets/js/breakpoints.min.js`}></script>
+    <script is:inline src={`${base}assets/js/util.js`}></script>
+    <script is:inline src={`${base}assets/js/main.js`}></script>
   </body>
 </html>
