@@ -1,4 +1,5 @@
 ---
+const { title = "Angel Guerra Muñoz" } = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -10,7 +11,7 @@ const base = import.meta.env.BASE_URL;
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <title>Angel Guerra Muñoz</title>
+    <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
 
     <link rel="stylesheet" href={`${base}assets/css/fontawesome-all.min.css`} />
